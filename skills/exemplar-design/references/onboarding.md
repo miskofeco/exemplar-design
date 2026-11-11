@@ -19,8 +19,8 @@ leads into the flow (`landing-layout.md`).
   nagging); B2B tools where an account is needed before any value exists; regulated or
   sensitive domains, where playful pressure reads as careless. Duolingo itself uses
   guilt and urgency in places; principle 8 marks where not to follow it.
-- Grounding: strong for philosophy and tests; none for live measurements (site blocked
-  on the verification date). Canon sources: NN/g, deceptive.design, B. J. Fogg.
+- Grounding: strong for philosophy and tests; thin for live measurements (four pages,
+  step count and order not recorded). Canon sources: NN/g, deceptive.design, B. J. Fogg.
 - Last verified: 2026-11-11
 
 ## Core
@@ -210,12 +210,19 @@ Carry this: earn the next visit before you ask for anything, and never buy it wi
 
 ## Observed values
 
-None recorded. On 2026-11-11 the measuring browser was not permitted to open the site,
-so no step counts, sizes, radii or timings are available. Do not supply any from memory.
+Reference points, not a spec. How to read this: answers are large tappable cards and the one forward action is a 50px button, which fits one decision per screen (principle 12); progress and step changes move in 0.4 to 0.7s, slow enough to be noticed as a reward. Step count and order before the account request are still unknown; do not state them.
 
 | What | Value | Where (URL) | Viewport | Date |
 |---|---|---|---|---|
-| (not measured) | | | | |
+| Headings | h1 32px, h2 36px, both weight 700 | https://cs.duolingo.com/ | 375x762 | 2026-11-11 |
+| Body text | 17px, weight 400, line-height 24px | https://cs.duolingo.com/ | 375x762 | 2026-11-11 |
+| Call-to-action buttons | 50px tall, radius 12px, label 15px weight 700 with 0.8px letter-spacing; secondary has a 2px border | https://cs.duolingo.com/ | 375x762 | 2026-11-11 |
+| Step heading | h1 32px, weight 700, line-height 40px | https://cs.duolingo.com/register | 1070x861 | 2026-11-11 |
+| Choice cards (buttons) | 217px tall, radius 16px, 2px border, 12px padding, label 17px | https://cs.duolingo.com/register | 1070x861 | 2026-11-11 |
+| Continue button | 50px tall, radius 16px, label 15px weight 700 | https://cs.duolingo.com/welcome | 1070x861 | 2026-11-11 |
+| Progress-bar style motion | width transition 0.4s ease | https://cs.duolingo.com/welcome | 1070x861 | 2026-11-11 |
+| Step transitions | transform 0.7s ease-in-out (5 elements); state changes 0.4s ease | https://cs.duolingo.com/welcome?welcomeStep=hdyhau | 1070x861 | 2026-11-11 |
+| Step addressing | each question is its own URL state (`welcomeStep` parameter) | https://cs.duolingo.com/welcome?welcomeStep=hdyhau | 1070x861 | 2026-11-11 |
 
 ## Anti-patterns
 

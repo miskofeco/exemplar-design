@@ -20,7 +20,7 @@ Not this file: hover, press, toggle and other single-control feedback; see
   web page has scroll, not a tracked finger, and CSS has no real spring. Content-heavy or
   task-heavy pages (docs, dashboards, forms) need far less motion than a product showcase.
 - Grounding: strong for beliefs, medium for web craft. Web rules derived from native
-  guidance are `[inferred]`. Nothing here was measured on apple.com (see Observed values).
+  guidance are `[inferred]`. Measured values cover the apple.com home page only, no product page.
 - Last verified: 2026-11-11
 
 ## Core
@@ -265,13 +265,18 @@ with `animation-timeline: scroll()` and a short `animation-range`.
 
 ## Observed values
 
-None. On 2026-11-11 the browser available to the author was not permitted to open
-apple.com, so no value was measured. Do not state any duration, easing, travel distance
-or pinning behaviour as "what Apple's site does" from this file.
+Reference points, not a spec. How to read this: on the home page motion is short (under a third of a second), symmetric in easing and confined to opacity and transform, which matches principles 8 and 11. It says nothing about the long scroll sequences on product pages; those are still unmeasured.
 
 | What | Value | Where (URL) | Viewport | Date |
 |---|---|---|---|---|
-| not measured | | | | 2026-11-11 |
+| Properties that transition | almost only opacity, transform and color; one width transition (7 elements), no other layout property in the top 15 | https://www.apple.com/ | 1070x861 | 2026-11-11 |
+| Opacity and transform durations | 0.12s to 0.32s, `ease`; most common 0.24s (115 elements) | https://www.apple.com/ | 1070x861 | 2026-11-11 |
+| Colour transitions (230 elements) | 0.32s, cubic-bezier(0.4, 0, 0.6, 1) | https://www.apple.com/ | 1070x861 | 2026-11-11 |
+| Longest transition seen | opacity 0.4s ease | https://www.apple.com/ | 1070x861 | 2026-11-11 |
+| Show and hide | visibility 0.24s steps(1) paired with the opacity fade | https://www.apple.com/ | 1070x861 | 2026-11-11 |
+| Scroll-timeline rules | 0 on this page | https://www.apple.com/ | 1070x861 | 2026-11-11 |
+| Reduced-motion handling | 4 `prefers-reduced-motion` media rules | https://www.apple.com/ | 1070x861 | 2026-11-11 |
+| Running animations at rest | 10 | https://www.apple.com/ | 1070x861 | 2026-11-11 |
 
 ## Anti-patterns
 

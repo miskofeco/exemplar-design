@@ -113,13 +113,19 @@ file is drawn with an outside authority (C33), not claimed as Duolingo's practic
 
 ## Measurements
 
-None. On 2026-11-11 the built-in browser refused duolingo.com ("blocked by your
-organization's policy"). No workaround was attempted, so the live pre-sign-up flow was
-not walked and no computed styles or timings were recorded.
+Collected on 2026-11-11 by the repo owner in their own browser with `research/measure.js`, because automated browsing of the site is blocked by organisation policy. Czech-locale site. Four pages were captured: the home page, `/register`, `/welcome` and `/welcome?welcomeStep=hdyhau`. The number and order of steps before the account request was not recorded, and 9 to 17 stylesheets per page were cross-origin and unreadable, so nothing can be said about reduced-motion rules.
 
 | ID | Page URL | What | Value | Viewport | Method | Date |
 |---|---|---|---|---|---|---|
-| | | | | | | |
+| M1 | https://cs.duolingo.com/ | Headings | h1 32px, h2 36px, both weight 700 | 375x762 | research/measure.js, computed style | 2026-11-11 |
+| M2 | https://cs.duolingo.com/ | Body text | 17px, weight 400, line-height 24px | 375x762 | research/measure.js, computed style | 2026-11-11 |
+| M3 | https://cs.duolingo.com/ | Call-to-action buttons | 50px tall, radius 12px, label 15px weight 700 with 0.8px letter-spacing; secondary has a 2px border | 375x762 | research/measure.js, computed style | 2026-11-11 |
+| M4 | https://cs.duolingo.com/register | Step heading | h1 32px, weight 700, line-height 40px | 1070x861 | research/measure.js, computed style | 2026-11-11 |
+| M5 | https://cs.duolingo.com/register | Choice cards (buttons) | 217px tall, radius 16px, 2px border, 12px padding, label 17px | 1070x861 | research/measure.js, computed style | 2026-11-11 |
+| M6 | https://cs.duolingo.com/welcome | Continue button | 50px tall, radius 16px, label 15px weight 700 | 1070x861 | research/measure.js, computed style | 2026-11-11 |
+| M7 | https://cs.duolingo.com/welcome | Progress-bar style motion | width transition 0.4s ease | 1070x861 | research/measure.js, computed style | 2026-11-11 |
+| M8 | https://cs.duolingo.com/welcome?welcomeStep=hdyhau | Step transitions | transform 0.7s ease-in-out (5 elements); state changes 0.4s ease | 1070x861 | research/measure.js, computed style | 2026-11-11 |
+| M9 | https://cs.duolingo.com/welcome?welcomeStep=hdyhau | Step addressing | each question is its own URL state (`welcomeStep` parameter) | 1070x861 | research/measure.js, computed style | 2026-11-11 |
 
 ## Discarded
 

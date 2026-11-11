@@ -141,13 +141,19 @@ give the company room to hold this bar (C22, C27, C46, C47).
 
 ## Measurements
 
-None. The built-in browser refused the site: "https://linear.app is blocked by your
-organization's policy and cannot be opened in the Browser pane" (2026-11-11). The block
-was not worked around, so no `[observed]` values exist for this area.
+Collected on 2026-11-11 by the repo owner in their own browser with `research/measure.js`, because automated browsing of the site is blocked by organisation policy. One page only, the marketing home page at phone width; the product app itself was not measured. The snippet reads resting state, so focus rings and hover states are not covered. Earlier "not measured" entries under Discarded are superseded for the rows below only.
 
 | ID | Page URL | What | Value | Viewport | Method | Date |
 |---|---|---|---|---|---|---|
-| | | | | | | |
+| M1 | https://linear.app/ | Page title (h1) | 38px, weight 510, line-height 1.1, letter-spacing -0.022em | 375x762 | research/measure.js, computed style | 2026-11-11 |
+| M2 | https://linear.app/ | Section heading (h2) | 24px, weight 510, line-height 1.33, letter-spacing -0.012em | 375x762 | research/measure.js, computed style | 2026-11-11 |
+| M3 | https://linear.app/ | Sub-heading (h3) | 20px, weight 590, line-height 1.33 | 375x762 | research/measure.js, computed style | 2026-11-11 |
+| M4 | https://linear.app/ | Body list text | 16px, weight 400, line-height 24px | 375x762 | research/measure.js, computed style | 2026-11-11 |
+| M5 | https://linear.app/ | Small controls | 28px tall; radius 8px or full pill; border 0.5px or none | 375x762 | research/measure.js, computed style | 2026-11-11 |
+| M6 | https://linear.app/ | Most common transition (216 elements) | color, 0.1s, cubic-bezier(0.25, 0.46, 0.45, 0.94) | 375x762 | research/measure.js, computed style | 2026-11-11 |
+| M7 | https://linear.app/ | Control state transitions | 0.16s on the same curve (filter, transform, border, background) | 375x762 | research/measure.js, computed style | 2026-11-11 |
+| M8 | https://linear.app/ | Slow, large movement | transform 0.7s cubic-bezier(0.32, 0.72, 0, 1) | 375x762 | research/measure.js, computed style | 2026-11-11 |
+| M9 | https://linear.app/ | Reduced-motion handling | 49 `prefers-reduced-motion` media rules in the page's stylesheets | 375x762 | research/measure.js, computed style | 2026-11-11 |
 
 ## Discarded
 

@@ -16,7 +16,7 @@ Not this file: marketing pages (`landing-layout.md`), data-heavy overview pages
 
 - Why this exemplar: Linear publishes its reasoning (a method, redesign write-ups, essays on quality) and its interface is a direct consequence of that reasoning, so the beliefs can be cited and not guessed.
 - Where it transfers poorly: products used rarely or by novices, where keyboard paths and density cost more than they give; products whose purpose is customisation (site builders, low-code); consumer and editorial surfaces where expression is the point.
-- Grounding: strong for beliefs and decisions, none for measured values (the live site could not be opened on the verification date); canon source for principle 12: W3C, WCAG 2.2.
+- Grounding: strong for beliefs and decisions; thin for measured values (one marketing page at phone width, app not measured); canon source for principle 12: W3C, WCAG 2.2.
 - Last verified: 2026-11-11
 
 ## Core
@@ -210,13 +210,19 @@ main     { color: var(--text);     background: var(--surface); }
 
 ## Observed values
 
-No values. On 2026-11-11 the site could not be opened in the measuring browser, so
-nothing was measured. Do not supply sizes, radii, durations or colours for Linear from
-memory; any number you use in this area is `[inferred]`.
+Reference points, not a spec. How to read this: three heading sizes and two heading weights carry the hierarchy, borders are hairline or absent (principles 6 to 8), and state changes are near-instant at 0.1 to 0.16s (principle 10). The values come from the marketing page, not the app, so treat them as the house hand, not as app density.
 
 | What | Value | Where (URL) | Viewport | Date |
 |---|---|---|---|---|
-| | | | | |
+| Page title (h1) | 38px, weight 510, line-height 1.1, letter-spacing -0.022em | https://linear.app/ | 375x762 | 2026-11-11 |
+| Section heading (h2) | 24px, weight 510, line-height 1.33, letter-spacing -0.012em | https://linear.app/ | 375x762 | 2026-11-11 |
+| Sub-heading (h3) | 20px, weight 590, line-height 1.33 | https://linear.app/ | 375x762 | 2026-11-11 |
+| Body list text | 16px, weight 400, line-height 24px | https://linear.app/ | 375x762 | 2026-11-11 |
+| Small controls | 28px tall; radius 8px or full pill; border 0.5px or none | https://linear.app/ | 375x762 | 2026-11-11 |
+| Most common transition (216 elements) | color, 0.1s, cubic-bezier(0.25, 0.46, 0.45, 0.94) | https://linear.app/ | 375x762 | 2026-11-11 |
+| Control state transitions | 0.16s on the same curve (filter, transform, border, background) | https://linear.app/ | 375x762 | 2026-11-11 |
+| Slow, large movement | transform 0.7s cubic-bezier(0.32, 0.72, 0, 1) | https://linear.app/ | 375x762 | 2026-11-11 |
+| Reduced-motion handling | 49 `prefers-reduced-motion` media rules in the page's stylesheets | https://linear.app/ | 375x762 | 2026-11-11 |
 
 ## Anti-patterns
 

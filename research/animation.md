@@ -131,13 +131,18 @@ check (C44, C48, C49, C53).
 
 ## Measurements
 
-Not done. On 2026-11-11 the built-in browser refused `https://www.apple.com/` ("blocked by
-your organization's policy"), and the brief says not to work around a refusal. No
-`[observed]` value exists for this area.
+Collected on 2026-11-11 by the repo owner in their own browser with `research/measure.js`, because automated browsing of the site is blocked by organisation policy. One page only, the home page at rest. No product page with scroll-driven sections was measured, so travel distance, pinning and scroll-linked behaviour remain unknown.
 
 | ID | Page URL | What | Value | Viewport | Method | Date |
 |---|---|---|---|---|---|---|
-| | | | | | | |
+| M1 | https://www.apple.com/ | Properties that transition | almost only opacity, transform and color; one width transition (7 elements), no other layout property in the top 15 | 1070x861 | research/measure.js, computed style | 2026-11-11 |
+| M2 | https://www.apple.com/ | Opacity and transform durations | 0.12s to 0.32s, `ease`; most common 0.24s (115 elements) | 1070x861 | research/measure.js, computed style | 2026-11-11 |
+| M3 | https://www.apple.com/ | Colour transitions (230 elements) | 0.32s, cubic-bezier(0.4, 0, 0.6, 1) | 1070x861 | research/measure.js, computed style | 2026-11-11 |
+| M4 | https://www.apple.com/ | Longest transition seen | opacity 0.4s ease | 1070x861 | research/measure.js, computed style | 2026-11-11 |
+| M5 | https://www.apple.com/ | Show and hide | visibility 0.24s steps(1) paired with the opacity fade | 1070x861 | research/measure.js, computed style | 2026-11-11 |
+| M6 | https://www.apple.com/ | Scroll-timeline rules | 0 on this page | 1070x861 | research/measure.js, computed style | 2026-11-11 |
+| M7 | https://www.apple.com/ | Reduced-motion handling | 4 `prefers-reduced-motion` media rules | 1070x861 | research/measure.js, computed style | 2026-11-11 |
+| M8 | https://www.apple.com/ | Running animations at rest | 10 | 1070x861 | research/measure.js, computed style | 2026-11-11 |
 
 ## Discarded
 

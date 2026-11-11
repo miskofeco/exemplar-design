@@ -4,7 +4,7 @@ A Claude skill that builds and critiques web UI in ten design areas, each after 
 named industry exemplar. Every principle carries an evidence tag and a source link.
 
 Status: Phase 1 (pilot) drafted, awaiting review: UI design, onboarding and animation
-have reference files with no live-site measurements yet. The other seven areas are
+have reference files with a first, thin set of live-site measurements. The other seven areas are
 empty; see [PLAN.md](PLAN.md).
 
 Not affiliated with, endorsed by or sponsored by any company named in this repository.
