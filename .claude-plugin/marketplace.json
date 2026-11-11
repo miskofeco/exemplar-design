@@ -1,0 +1,13 @@
+{
+  "name": "exemplar-design",
+  "owner": {
+    "name": "exemplar-design contributors"
+  },
+  "plugins": [
+    {
+      "name": "exemplar-design",
+      "source": "./",
+      "description": "Build and critique web UI after one named industry exemplar per design area, with every principle evidence-tagged and sourced."
+    }
+  ]
+}

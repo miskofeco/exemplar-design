@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: builds-onboarding-flow
+expected_outcome: |
+  A working single-file onboarding.html of 4 to 5 steps in plain HTML and CSS, with design values in CSS custom properties, original branding for Tally (no Duolingo name, mascot, colours or typeface).
+  The reply ends with an evidence note that lists each design decision with the principle behind it and exactly one evidence tag ([published], [observed YYYY-MM-DD], [canon] or [inferred]).
+  Every [published] and [observed] entry carries a link, and no claim about what Duolingo does is presented as fact without one.

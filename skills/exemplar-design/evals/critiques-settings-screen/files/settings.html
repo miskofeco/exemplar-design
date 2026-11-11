@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workspace settings</title>
+<style>
+  body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #222; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 13px 22px 40px 17px; }
+  h1 { font-size: 31px; margin: 9px 0 27px; color: #6b21a8; }
+  h2 { font-size: 19px; margin: 34px 0 6px; color: #0e7490; text-transform: uppercase; }
+  .hint { font-size: 11px; color: #b5b5b5; margin: 0 0 15px; }
+  .row { display: flex; justify-content: space-between; align-items: center;
+         border: 2px solid #999; background: #fff; padding: 18px 11px; margin-bottom: 7px; }
+  .row label { font-size: 15px; font-weight: bold; }
+  .row small { display: block; font-size: 12.5px; color: #c0c0c0; font-weight: normal; }
+  input[type=text], select { font-size: 14px; padding: 5px 9px; border: 2px solid #999; width: 210px; }
+  input:focus, select:focus, button:focus, a:focus { outline: none; }
+  .btn { font-size: 14px; padding: 9px 21px; border: 0; color: #fff; cursor: pointer; }
+  .save { background: #16a34a; }
+  .invite { background: #2563eb; }
+  .danger { background: #dc2626; }
+  .link { color: #ea580c; font-size: 12.5px; }
+  .actions { margin-top: 23px; display: flex; gap: 5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Workspace settings</h1>
+
+  <h2>General</h2>
+  <p class="hint">These settings apply to everyone in the workspace.</p>
+  <div class="row">
+    <label for="name">Workspace name <small>Shown in the sidebar and in emails</small></label>
+    <input id="name" type="text" value="Acme Platform">
+  </div>
+  <div class="row">
+    <label for="tz">Time zone <small>Used for due dates and digests</small></label>
+    <select id="tz"><option>UTC</option><option>Europe/Bratislava</option></select>
+  </div>
+
+  <h2>Members</h2>
+  <p class="hint">Invite people or change what they can do. <a class="link" href="#">Learn about roles</a></p>
+  <div class="row">
+    <label for="role">Default role <small>Given to people who join by link</small></label>
+    <select id="role"><option>Member</option><option>Admin</option><option>Guest</option></select>
+  </div>
+  <div class="row">
+    <label>Invite link <small>Anyone with the link can join</small></label>
+    <button class="btn invite">Copy invite link</button>
+  </div>
+
+  <h2>Danger zone</h2>
+  <div class="row">
+    <label>Delete workspace <small>This cannot be undone</small></label>
+    <button class="btn danger">Delete</button>
+  </div>
+
+  <div class="actions">
+    <button class="btn save">Save changes</button>
+    <button class="btn invite">Cancel</button>
+  </div>
+</div>
+</body>
+</html>

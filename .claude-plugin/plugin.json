@@ -1,0 +1,10 @@
+{
+  "name": "exemplar-design",
+  "description": "Build and critique web UI after one named industry exemplar per design area, with every principle evidence-tagged and sourced.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": ["design", "ui", "ux", "evidence"],
+  "experimental": {
+    "evals": "skills/exemplar-design/evals"
+  }
+}

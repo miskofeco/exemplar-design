@@ -1,0 +1,7 @@
+---
+type: llm
+focus: trace
+weight: 1
+---
+
+The result matches this description: A working lamp.html with scroll-linked or scroll-triggered entrance motion for a placeholder image and headline, no libraries, timing and easing values held in CSS custom properties, and motion disabled or reduced under prefers-reduced-motion. No Apple logo, product names, typeface or copy. The reply ends with an evidence note in which each motion decision has exactly one evidence tag, and guidance Apple publishes for native apps is labelled [inferred] where it is translated to the web rather than presented as Apple web guidance. Every [published] and [observed] entry carries a link.
