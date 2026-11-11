@@ -17,14 +17,29 @@ Not this file: <nearest neighbouring area and which file covers it>.
 - Grounding: <strong | medium | weak>; canon source if any: <name, work>
 - Last verified: YYYY-MM-DD
 
+## Core
+
+<!-- The soul of the file, 120 to 200 words of prose. What the exemplar believes and
+     refuses, where that comes from (people, history, business model, psychology),
+     and the one sentence a designer should carry into every decision. Every factual
+     statement links to a source recorded in the dossier. Written first; the
+     principles below must read as consequences of it. -->
+
+<what the exemplar stands for, with links>
+
+Carry this: <one sentence>
+
 ## Principles
 
-<!-- 8 to 12. One tag each. Quotes under 15 words; otherwise paraphrase. -->
+<!-- 8 to 12, ordered from belief to craft: the first ones are stances (what to
+     optimise for, what to refuse), the later ones are execution. One tag each.
+     Quotes under 15 words; otherwise paraphrase. -->
 
 ### 1. <Rule as an imperative>
 
 - Why: <the reason, in terms of what the user of the UI experiences>
 - Evidence: `[published]` | `[observed YYYY-MM-DD]` | `[canon]` | `[inferred]` <link>
+- Also supported by: <named third-party source, link> <!-- optional; omit the line if none -->
 - On the web:
 
 ```css

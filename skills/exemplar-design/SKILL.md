@@ -36,7 +36,7 @@ looks grounded and is not.
 |---|---|---|
 | `[published]` | The leader's own guideline, post or talk | The reference file links the leader's own page |
 | `[observed YYYY-MM-DD]` | Measured on the leader's live site on that date | The reference file's observed-values table has it |
-| `[canon]` | A named outside authority | The leader publishes little; the reference names the authority |
+| `[canon]` | A named outside authority | The rule rests on an outside source the reference names, not on the leader's own words |
 | `[inferred]` | Our translation or reasoning, not a fact about the leader | Anything not directly backed by one of the three above |
 
 ## Router
@@ -65,7 +65,8 @@ micro-interactions are the feedback of a single control.
 
 1. Identify the area(s) from the router and read the reference file(s).
 2. Read the "Leader fit" note. If the user's product differs from the leader's context
-   in a way the note flags, say so before building.
+   in a way the note flags, say so before building. Read "Core" next: it is what the
+   exemplar stands for, and it decides every case the principles do not cover.
 3. Choose the principles that apply to this request. Applying four well beats naming
    twelve.
 4. Build in plain HTML and CSS unless the project already uses something else, in which

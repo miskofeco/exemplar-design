@@ -78,17 +78,39 @@ Every principle in a reference file carries one tag and a link:
 - `[inferred]` our translation to the web, stated as such, never presented as fact
 
 Area file template: scope and when to read; leader fit note with last-verified date;
-8 to 12 principles (rule, why, tag + link, CSS translation); table of observed values;
-anti-patterns; critique checklist.
+core (what the exemplar stands for); 8 to 12 principles ordered from belief to craft
+(rule, why, tag + link, optional third-party support, CSS translation); table of
+observed values; anti-patterns; critique checklist.
+
+Direction set at the start of Phase 1: an area file is not a spec sheet. It leads with
+the exemplar's philosophy (what it believes and refuses, the psychology and business
+reasoning behind it), and measurements only illustrate that. The leader's own material
+comes first; named third-party sources may back a principle as "Also supported by", or
+carry it alone under `[canon]`.
 
 ## Per-area pipeline (repeated for every area)
 
-1. Dossier: open and read each primary source, record claim, short quote, URL and date
-   in `research/<area>.md`. Discard anything not confirmed on the page.
-2. Measure: load the leader's live site in the browser and record computed values.
+1. Dossier: open and read each source (leader first, then named third parties), record
+   claim, short quote, URL and date in `research/<area>.md`, and write the core thesis.
+   Discard anything not confirmed on the page.
+2. Measure: load the leader's live site in the built-in browser and record computed
+   values that illustrate the principles.
 3. Distill: write `references/<area>.md` from the dossier using the template.
-4. Evals: one build case and one critique case, prompts first, graders after first runs.
-5. Review: with-skill and no-skill runs, skill-creator viewer, your feedback, revise.
+4. Eval prompts: add or adjust case prompts for the area. No runs here; all billed
+   runs, graders and revisions happen in Phase 5.
+
+## Folder roadmap
+
+| Folder | Filled in | Holds |
+|---|---|---|
+| `templates/` | Phase 0, frozen after Phase 1 review | Area and dossier templates |
+| `research/` | Phases 1 to 3 | One dossier per area |
+| `skills/exemplar-design/references/` | Phases 1 to 3 | One area file per area |
+| `skills/exemplar-design/SKILL.md` | Phase 0, conflict rules in Phase 4 | Router, workflows, evidence rules |
+| `skills/exemplar-design/evals/<case>/prompt.md`, `case.yaml` | Phases 0 to 4 | Case prompts and expected outcomes |
+| `skills/exemplar-design/evals/<case>/graders/` | Phase 5 | Real graders, written after first runs |
+| `exemplar-design-workspace/iteration-N/` (git-ignored) | Phase 5 | Run outputs, benchmarks, one folder per improvement round |
+| `dist/*.skill` (git-ignored) | Phase 6 | Packaged skill |
 
 ## Phases
 
@@ -112,13 +134,23 @@ Phase 3, Canon-supplemented batch
   art direction after Aesop; dashboards after Notion (+ Stephen Few, NN/g).
 - Each canon source is confirmed with you at the start of the phase.
 
-Phase 4, Integrate and release
+Phase 4, Integrate
 1. Cross-area conflict rules (for example minimalism versus micro-interactions).
-2. Full eval set across all areas; blind comparison against no-skill.
-3. Description optimisation: 20 trigger queries, including near-misses that should go
+2. Complete the eval set: one build and one critique case per area, prompts and
+   expected outcomes only.
+
+Phase 5, Evaluate and self-improve (all billed runs live here)
+1. Baseline: every case with-skill and no-skill into `iteration-1/`.
+2. Write real graders from what those runs show.
+3. Improvement loop: review in the skill-creator viewer, your feedback, revise
+   reference files and `SKILL.md`, re-run into `iteration-N/`, compare benchmarks.
+   Stop when a round no longer improves the with-skill score.
+4. Description optimisation: 20 trigger queries, including near-misses that should go
    to impeccable, ui-ux-pro-max or unslop instead.
-4. Package `.skill`, finish README and marketplace entry, tag v1.0.0.
-5. Record a re-verification date per area (observed values go stale).
+
+Phase 6, Release
+1. Package `.skill`, finish README and marketplace entry, tag v1.0.0.
+2. Record a re-verification date per area (observed values go stale).
 
 Each phase ends with a commit and your review before the next starts.
 
@@ -137,7 +169,7 @@ Run from the repo root:
 ## Risks
 
 - Trigger collisions with four installed design skills. Mitigated by a narrow
-  description and near-miss tests in Phase 4, not before.
+  description and near-miss tests in Phase 5, not before.
 - Apple's published motion principles are for native apps; the web translation is
   `[inferred]` and will be labelled so.
 - Observed values drift as sites redesign (Airbnb reportedly changed its category bar
@@ -145,7 +177,9 @@ Run from the repo root:
 - Design quality is subjective: graders check evidence and structure; visual quality is
   judged by you in the viewer.
 - Not yet verified: whether `claude plugin eval` and `package_skill` handle an `evals/`
-  folder inside the skill the way the docs imply. Checked in Phase 0 step 5.
+  folder inside the skill the way the docs imply. Checked at the start of Phase 5.
+- No area content is tested until Phase 5, so a template flaw found there costs a
+  rewrite of up to ten files. Your review at the end of Phase 1 is the early check.
 
 ## Questions
 

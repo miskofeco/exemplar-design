@@ -12,6 +12,12 @@ Status: <in progress | complete>. Last updated: YYYY-MM-DD.
 |---|---|---|---|---|
 | S1 | | | leader-published / talk / canon / third-party | YYYY-MM-DD |
 
+## Core thesis
+
+<!-- What the exemplar believes, refuses and optimises for, and where that comes
+     from. Each sentence cites claim IDs from the table below. This feeds the
+     "Core" section of the reference file. -->
+
 ## Claims
 
 <!-- Quote under 15 words, copied from the page. Status "confirmed" only if the
